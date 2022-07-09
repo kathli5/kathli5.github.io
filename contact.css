@@ -1,0 +1,141 @@
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smoothl
+}
+
+body {
+  min-height: 100vh;
+  background:linear-gradient(#827081, white);
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9000;
+}
+
+.logo {
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header .top {
+  display: flex;
+}
+
+header .top li {
+  list-style: none;
+  margin-left: 2vw;
+}
+
+header .top li a {
+  text-decoration: none;
+  padding: 10px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.75vw;
+}
+
+.contact {
+  color: #827081;
+  background: #E7E6F7;
+  border-radius: 15px;
+}
+
+.other {
+  color: #E7E6F7;
+}
+
+.other:hover {
+  background: #E7E6F7;
+  color: #827081;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+h2 {
+  padding-top: 15vh;
+  padding-left: 5vh;
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 2px #827081;
+}
+
+.connect {
+  padding-top: 3vh;
+  padding-left: 5vh;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 2px 2px 2px #827081;
+  padding-bottom: 5vh;
+}
+
+h3 {
+  z-index: 9000;
+  width: 100%;
+  text-align: center;
+  padding-top: 10vh;
+  padding-left: 5vh;
+  font-size: 1.5em;
+  color: #827081;
+  padding-bottom: 5vh;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.social {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.social img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+footer {
+  background: white;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, white, transparent)
+}
+
+
+.footerText {
+  padding: 5vh;
+  color: #827081;
+}

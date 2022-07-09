@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About</title>
+  <link rel="icon" type="image/x-icon" href="starLogo.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!--   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">  -->
+</head>
+
+<body>
+  <div class = 'desktop'>
+
+  <header> 
+    <a href = 'index.html' class = 'logo'><img src = "starLogo.png" width = "75" height = "75"></a>
+    <div class = 'top'>
+      <li> <a href = 'index.html' class = "about">About</a></li>
+      <li> <a href = 'work.html' class = "other">Work</a></li>
+      <li> <a href = 'contact.html' class = "other">Contact</a></li>
+    </div>
+  </header>
+
+  <section>
+    <img src = "starsLeft.png" id = "starLeft">
+
+    <h2 id = "text">👋 hi, i'm kathy</h2>
+    <img src = "starsRight.png" id = "starRight">
+  </section>
+  <div class = "sec">
+    <h2>About</h2>
+    <p>Hello! I'm Kathy and am currently a sophomore at <mark class = "textColor">Wellesley College</mark> (class of 2025), intending to major in <mark class = "textColor">Computer Science</mark> and <mark class = "textColor">Economics</mark>. I have particular interests in front-end development, but am open to exploring anything 👀. I also enjoy teaching others about coding and I'm curious about learning more about the tech realm in general! 
+</p> 
+    <p>My journey started when I wrote my first line of code in a <a href = "https://www.kodewithklossy.com/" target="_blank"class = "textColor">Kode With Klossy</a> web development camp in the summer of 2020. I loved being able to create projects that could impact people (that also had a beautiful design ✨). My CS classes in college further solidified my interests in being able to solve problems creatively and build real products for real people ⭐️. 
+</p>
+
+    <p>Outside of coding, I enjoy yoga and figure skating in my free time. I also love to read, cook, and grocery shop.</p>
+  </div>
+  
+<!--   <script src="script.js"></script> -->
+ <!--
+This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
+-->
+<!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  -->
+
+  <script>
+    let starLeft = document.getElementById('starLeft');
+    let text = document.getElementById('text');
+    let starRight = document.getElementById('starRight');
+    // let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+      let value = window.scrollY;
+      starLeft.style.top = value * 0.15 + 'px';
+      starRight.style.top = value  * 0.15 + 'px';
+      text.style.marginRight = value  * 2 + 'px';
+      text.style.marginTop = value  * 0.5 + 'px';
+      // header.style.marginTop = value * 0.5 + 'px';
+    })
+  </script>
+  </div>
+
+  <footer>
+    <br></br>
+    <h4 class = "footerText">coded with ♥ by kathy li</h4>
+  </footer>
+
+</body>
+
+</html>
